@@ -1,10 +1,10 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 import {
   Card,
   CardBody,
   Typography,
-  IconButton,
-} from "@material-tailwind/react";
+  IconButton
+} from '@material-tailwind/react'
 
 export function FeatureCard({ color, icon, title, description }) {
   return (
@@ -26,40 +26,40 @@ export function FeatureCard({ color, icon, title, description }) {
         </Typography>
       </CardBody>
     </Card>
-  );
+  )
 }
 
 FeatureCard.defaultProps = {
-  color: "blue",
-};
+  color: 'blue'
+}
 
 FeatureCard.propTypes = {
   color: PropTypes.oneOf([
-    "blue-gray",
-    "gray",
-    "brown",
-    "deep-orange",
-    "orange",
-    "amber",
-    "yellow",
-    "lime",
-    "light-green",
-    "green",
-    "teal",
-    "cyan",
-    "light-blue",
-    "blue",
-    "indigo",
-    "deep-purple",
-    "purple",
-    "pink",
-    "red",
+    'blue-gray',
+    'gray',
+    'brown',
+    'deep-orange',
+    'orange',
+    'amber',
+    'yellow',
+    'lime',
+    'light-green',
+    'green',
+    'teal',
+    'cyan',
+    'light-blue',
+    'blue',
+    'indigo',
+    'deep-purple',
+    'purple',
+    'pink',
+    'red'
   ]),
   icon: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.node.isRequired,
-};
+  description: PropTypes.node.isRequired
+}
 
-FeatureCard.displayName = "/src/widgets/layout/feature-card.jsx";
+FeatureCard.displayName = '/src/widgets/layout/feature-card.jsx'
 
-export default FeatureCard;
+export default FeatureCard

@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-import { Typography, IconButton } from "@material-tailwind/react";
+import PropTypes from 'prop-types'
+import { Typography, IconButton } from '@material-tailwind/react'
 
-const year = new Date().getFullYear();
+const year = new Date().getFullYear()
 
 export function Footer({ title, description, socials, menus, copyright }) {
   return (
-    <footer className="relative px-4 pt-8 pb-6">
+    <footer className="relative px-4 pb-6 pt-8">
       <div className="container mx-auto">
         <div className="flex flex-wrap pt-6 text-center lg:text-left">
           <div className="w-full px-4 lg:w-6/12">
@@ -15,7 +15,7 @@ export function Footer({ title, description, socials, menus, copyright }) {
             <Typography className="font-normal text-blue-gray-500">
               {description}
             </Typography>
-            <div className="mx-auto mt-6 mb-8 flex justify-center gap-2 md:mb-0 lg:justify-start">
+            <div className="mx-auto mb-8 mt-6 flex justify-center gap-2 md:mb-0 lg:justify-start">
               {socials.map(({ color, name, path }) => (
                 <a
                   key={name}
@@ -75,106 +75,93 @@ export function Footer({ title, description, socials, menus, copyright }) {
         </div>
       </div>
     </footer>
-  );
+  )
 }
 
 Footer.defaultProps = {
-  title: "Material Tailwind",
+  title: 'Van Kim',
   description:
-    "Easy to use React components for Tailwind CSS and Material Design.",
+    'Van Kim mô tả.',
   socials: [
     {
-      color: "blue",
-      name: "facebook",
-      path: "https://www.facebook.com/CreativeTim",
+      color: 'blue',
+      name: 'facebook',
+      path: 'https://www.facebook.com/CreativeTim'
     },
     {
-      color: "light-blue",
-      name: "twitter",
-      path: "https://www.twitter.com/creativetim",
+      color: 'light-blue',
+      name: 'twitter',
+      path: 'https://www.twitter.com/creativetim'
     },
     {
-      color: "purple",
-      name: "instagram",
-      path: "https://www.instagram.com/creativetimofficial/",
+      color: 'purple',
+      name: 'instagram',
+      path: 'https://www.instagram.com/creativetimofficial/'
     },
     {
-      color: "pink",
-      name: "dribbble",
-      path: "https://www.dribbble.com/creativetim",
+      color: 'pink',
+      name: 'dribbble',
+      path: 'https://www.dribbble.com/creativetim'
     },
-    {
-      color: "red",
-      name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
-    },
-    {
-      color: "black",
-      name: "github",
-      path: "https://github.com/creativetimofficial/material-tailwind",
-    },
+    // {
+    //   color: 'red',
+    //   name: 'youtube',
+    //   path: 'https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w'
+    // },
+    // {
+    //   color: 'black',
+    //   name: 'github',
+    //   path: 'https://github.com/creativetimofficial/material-tailwind'
+    // }
   ],
   menus: [
     {
-      name: "useful links",
+      name: 'Danh mục',
       items: [
-        { name: "About Us", path: "https://www.creative-tim.com/presentation" },
-        { name: "Blog", path: "https://www.creative-tim.com/blog" },
-        {
-          name: "Github",
-          path: "https://www.github.com/creativetimofficial/material-tailwind?ref=mtk",
-        },
-        {
-          name: "Free Products",
-          path: "https://www.creative-tim.com/templates/free?ref=mtk",
-        },
-      ],
+        { name: 'Trang chủ', path: 'https://www.creative-tim.com/presentation' },
+        { name: 'Giới thiệu', path: 'https://www.creative-tim.com/presentation' },
+        { name: 'Sản phẩm', path: 'https://www.creative-tim.com/presentation' },
+        { name: 'Dịch vụ', path: 'https://www.creative-tim.com/presentation' },
+        { name: 'Tin tức', path: 'https://www.creative-tim.com/presentation' },
+        { name: 'Liên hệ', path: 'https://www.creative-tim.com/blog' },
+      ]
     },
     {
-      name: "other resources",
+      name: 'Các nguồn khác',
       items: [
         {
-          name: "MIT License",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk",
+          name: 'abc',
+          path: 'https://github.com/creativetimofficial/material-tailwind/blob/main/LICENSE.md?ref=mtk'
         },
         {
-          name: "Contribute",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk",
+          name: 'xyz',
+          path: 'https://github.com/creativetimofficial/material-tailwind/blob/main/CONTRIBUTING.md?ref=mtk'
         },
-        {
-          name: "Change Log",
-          path: "https://github.com/creativetimofficial/material-tailwind/blob/main/CHANGELOG.md?ref=mtk",
-        },
-        {
-          name: "Contact Us",
-          path: "https://creative-tim.com/contact-us?ref=mtk",
-        },
-      ],
-    },
+      ]
+    }
   ],
   copyright: (
     <>
-      Copyright © {year} Material Tailwind by{" "}
-      <a
+      Copyright © {year} by Thai
+      {/* <a
         href="https://www.creative-tim.com?ref=mtk"
         target="_blank"
         className="text-blue-gray-500 transition-colors hover:text-blue-500"
       >
         Creative Tim
-      </a>
-      .
+      </a> */}
     </>
-  ),
-};
+  )
+}
 
 Footer.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   socials: PropTypes.arrayOf(PropTypes.object),
   menus: PropTypes.arrayOf(PropTypes.object),
-  copyright: PropTypes.node,
-};
+  copyright: PropTypes.node
+}
 
-Footer.displayName = "/src/widgets/layout/footer.jsx";
+Footer.displayName = '/src/widgets/layout/footer.jsx'
 
-export default Footer;
+export default Footer

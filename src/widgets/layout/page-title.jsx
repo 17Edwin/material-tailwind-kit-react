@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { Typography } from "@material-tailwind/react";
+import PropTypes from 'prop-types'
+import { Typography } from '@material-tailwind/react'
 
 export function PageTitle({ heading, children }) {
   return (
@@ -11,14 +11,14 @@ export function PageTitle({ heading, children }) {
         {children}
       </Typography>
     </div>
-  );
+  )
 }
 
 PageTitle.propTypes = {
   heading: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
-};
+  children: PropTypes.node.isRequired
+}
 
-PageTitle.displayName = "/src/widgets/layout/page-title.jsx";
+PageTitle.displayName = '/src/widgets/layout/page-title.jsx'
 
-export default PageTitle;
+export default PageTitle

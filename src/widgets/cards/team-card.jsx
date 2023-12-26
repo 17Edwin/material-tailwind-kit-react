@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import { Card, Avatar, Typography } from "@material-tailwind/react";
+import PropTypes from 'prop-types'
+import { Card, Avatar, Typography } from '@material-tailwind/react'
 
 export function TeamCard({ img, name, position, socials }) {
   return (
@@ -10,7 +10,7 @@ export function TeamCard({ img, name, position, socials }) {
         size="xxl"
         className="h-full w-full shadow-lg shadow-gray-500/25"
       />
-      <Typography variant="h5" color="blue-gray" className="mt-6 mb-1">
+      <Typography variant="h5" color="blue-gray" className="mb-1 mt-6">
         {name}
       </Typography>
       {position && (
@@ -20,21 +20,21 @@ export function TeamCard({ img, name, position, socials }) {
       )}
       {socials && <div className="mx-auto mt-5">{socials}</div>}
     </Card>
-  );
+  )
 }
 
 TeamCard.defaultProps = {
-  position: "",
-  socials: null,
-};
+  position: '',
+  socials: null
+}
 
 TeamCard.propTypes = {
   img: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   position: PropTypes.string,
-  socials: PropTypes.node,
-};
+  socials: PropTypes.node
+}
 
-TeamCard.displayName = "/src/widgets/layout/team-card.jsx";
+TeamCard.displayName = '/src/widgets/layout/team-card.jsx'
 
-export default TeamCard;
+export default TeamCard
