@@ -65,7 +65,7 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+              Làm việc với chúng tôi là một vinh hạnh
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
                 Don't let your uses guess by attaching tooltips and popoves to
@@ -109,10 +109,8 @@ export function Home() {
       </section>
       <section className="px-4 pb-48 pt-20">
         <div className="container mx-auto">
-          <PageTitle heading="Here are our heroes">
-            According to the National Oceanic and Atmospheric Administration,
-            Ted, Scambos, NSIDClead scentist, puts the potentially record
-            maximum.
+          <PageTitle heading="Sản phẩm của chúng tôi">
+            Chất Lượng Tạo Thương Hiệu - Uy Tín Cùng Phát Triển
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
@@ -132,6 +130,11 @@ export function Home() {
                 }
               />
             ))}
+          </div>
+          <div className="mt-20 text-center">
+            <Button variant="gradient" size="lg" className="mt-8">
+              Xem thêm
+            </Button>
           </div>
         </div>
       </section>

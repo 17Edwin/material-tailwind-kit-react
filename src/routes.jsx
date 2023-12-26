@@ -23,7 +23,7 @@ export const routes = [
   },
   {
     icon: PhoneIcon,
-    name: 'liên lạc',
+    name: 'liên hệ',
     path: '/contact',
     element: <SignUp />
   },

@@ -22,7 +22,7 @@ export function Profile() {
                   <div className="relative">
                     <div className="-mt-20 w-40">
                       <Avatar
-                        src="/img/block.jpg"
+                        src="/img/block1.jpg"
                         alt="Profile picture"
                         variant="circular"
                         className="h-full w-full shadow-xl"

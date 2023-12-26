@@ -75,9 +75,9 @@ export function Navbar({ brandName, routes, action }) {
               Hotline: 0947 59 82 59{' '}
             </Button>
           </a>
-          {React.cloneElement(action, {
+          {/* {React.cloneElement(action, {
             className: 'hidden lg:inline-block'
-          })}
+          })} */}
         </div>
         <IconButton
           variant="text"
@@ -108,9 +108,9 @@ export function Navbar({ brandName, routes, action }) {
               pro version
             </Button>
           </a>
-          {React.cloneElement(action, {
+          {/* {React.cloneElement(action, {
             className: 'w-full block'
-          })}
+          })} */}
         </div>
       </MobileNav>
     </MTNavbar>
