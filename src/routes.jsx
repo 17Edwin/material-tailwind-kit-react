@@ -1,4 +1,4 @@
-import { Home, Profile, SignIn, SignUp } from '@/pages'
+import { Home, Profile, Contact, SignUp } from '@/pages'
 import {
   HomeIcon,
   UserCircleIcon,
@@ -25,7 +25,7 @@ export const routes = [
     icon: PhoneIcon,
     name: 'liên hệ',
     path: '/contact',
-    element: <SignUp />
+    element: <Contact />
   },
   {
     name: 'sản phẩm',
